@@ -3,7 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Harjutus 9</title>
+<?php
+    function bg_color($value = red) {
+        return $value;
+    }
+
+   $color = bg_color("blue");
+?>
 <style type="text/css">
+body {
+    background-color: <?php echo $color; ?>;
+}
+
     .container {
       max-width: 200px;
       margin: 0 auto;
