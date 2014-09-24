@@ -47,5 +47,23 @@ function add($number1, $number2) {
 $result = add(3,4);
 echo $result;
 ?>
+
+<h3>Mitme väärtuse tagastamine</h3>
+  <?php
+      function calculate($nr1, $nr2) {
+          $plus = $nr1 + $nr2;
+          $minus = $nr1 - $nr2;
+
+          return array($plus, $minus);
+      }
+
+      $result_array = calculate(10, 5);
+  ?>
+  <ul>
+  <?php 
+    echo "<li>Numbrite summa on $result_array[0]</li><br>
+    <li>Nubrite vahe on $result_array[1]</li>";
+  ?>
+  </ul>
 </body>
 </html>
